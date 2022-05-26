@@ -269,29 +269,27 @@ class SCR_AISpawnerComponent : ScriptComponent
 	override void EOnInit(IEntity owner)
 	{
 		
-		if (m_bSpawnImmediately)
-		{
-			// Spawning of Replicated items must not happen in EOnInit,
-			// we delay the call to happen asap (after EOnInit)
-			GetGame().GetCallqueue().CallLater(DoSpawnDefault, 0);
-		}
-
 		SCR_BaseTriggerEntity parentTrigger = SCR_BaseTriggerEntity.Cast(owner);
 		if (!parentTrigger)
 		{
 			Print("SCR_AISpawnerComponent cannot hook to trigger, it is not a child of SCR_BaseTriggerEntity!");
 			return;
 		}
-
+		
 		vector parentVector[4];
 		parentTrigger.GetTransform(parentVector);
 		m_vSpawnPosition = parentVector[3];
-		parentTrigger.GetOnActivate().Insert(OnTriggerActivate);
-		//SCR_BaseTriggerEntity tmp = SCR_BaseTriggerEntity.Cast(FindComponent(SCR_BaseTriggerEntity));
-		//if(!tmp)
-		//{
-		//	Print("Could not get Rlc Respawn from myself");
-		//}
+		
+		if (m_bSpawnImmediately)
+		{
+			// Spawning of Replicated items must not happen in EOnInit,
+			// we delay the call to happen asap (after EOnInit)
+			GetGame().GetCallqueue().CallLater(DoSpawnDefault, 0);
+		}
+		else
+		{
+			parentTrigger.GetOnActivate().Insert(OnTriggerActivate);
+		}
 	}
 
 	//------------------------------------------------------------------------------------------------
