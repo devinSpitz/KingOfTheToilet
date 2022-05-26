@@ -1,0 +1,174 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ "Z Order" 1000
+ {
+  FrameWidgetClass "{5970F72F366B007B}" {
+   Name "Score_Root"
+   Slot FrameWidgetSlot "{5626D0F364797B4C}" {
+    Anchor 0.5 0 0.5 0
+    PositionX 1
+    OffsetLeft 1
+    PositionY 0
+    OffsetTop 0
+    SizeX 730
+    OffsetRight -731
+    SizeY 28
+    OffsetBottom -28
+    Alignment 0.5 0
+   }
+   {
+    FrameWidgetClass "{5970F72F366B007E}" {
+     Name "Score_Left"
+     Slot FrameWidgetSlot "{59488DF333E350CC}" {
+      SizeX 304
+      OffsetRight -304
+      SizeY 29
+      OffsetBottom -29
+      SizeToContent 1
+     }
+     {
+      FrameWidgetClass "{5971049170CA5699}" : "{EF7F72B276388F1F}Worlds/CaptureAndHoldScoreLeft.layout" {
+       Name "TeamScore_Left0"
+       Slot FrameWidgetSlot "{5971049170CA56AB}" {
+        PositionX 1.09
+        OffsetLeft 1.09
+        PositionY 0.783
+        OffsetTop 0.783
+        SizeX 304.001
+        OffsetRight -305.091
+        SizeY 29
+        OffsetBottom -29.783
+       }
+       {
+        HorizontalLayoutWidgetClass "{5970F72F60D3511E}" {
+         Prefab "{5970F72F60D3511E}"
+         {
+          OverlayWidgetClass "{5970F72F60D35110}" {
+           Prefab "{5970F72F60D35110}"
+           {
+            TextWidgetClass "{5970F72F60D35113}" {
+             Prefab "{5970F72F60D35113}"
+             "Font Size" 20
+            }
+           }
+          }
+          ImageWidgetClass "{5970F72F60D35114}" {
+           Prefab "{5970F72F60D35114}"
+           Texture "{A73947B37A287314}UI/Textures/Flags/flag_us_ca.edds"
+           Image ""
+           Size 52 28
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    TextWidgetClass "{5970F72F366B007F}" {
+     Name "RemainingTime"
+     Slot FrameWidgetSlot "{5946C48E2F885373}" {
+      Anchor 0.5 1 0.5 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+      Alignment 0.5 1
+      SizeToContent 1
+     }
+     Text "00:00:00"
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{5946C48E9B1B0FFF}" {
+      Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+      ShadowSize 4
+      ShadowOffset 5 5
+      ShadowOpacity 0.5
+     }
+     Offset -0.5 0
+    }
+    FrameWidgetClass "{5970F72F366B0070}" {
+     Name "Score_Right"
+     Slot FrameWidgetSlot "{59488DF3316A42AB}" {
+      Anchor 1 0 1 0
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 304
+      OffsetRight -304
+      SizeY 29
+      OffsetBottom -29
+      Alignment 1 0
+      SizeToContent 1
+     }
+     {
+      FrameWidgetClass "{59710491488AC6D0}" : "{E785D03A20F54395}Worlds/CaptureAndHoldScoreRight.layout" {
+       Name "TeamScore_Right0"
+       Slot FrameWidgetSlot "{59710491488AC6E1}" {
+        PositionX 423.623
+        OffsetLeft 423.623
+        PositionY -0.273
+        OffsetTop -0.273
+        SizeX 304
+        OffsetRight -727.623
+        SizeY 29
+        OffsetBottom -28.727
+       }
+       {
+        HorizontalLayoutWidgetClass "{5970F72F63F423F3}" {
+         Prefab "{5970F72F63F423F3}"
+         {
+          ImageWidgetClass "{5970F72F63F423F5}" {
+           Prefab "{5970F72F63F423F5}"
+           Texture "{50824EB9F2C215AB}UI/Textures/Flags/USSR-flag-base-3it.edds"
+           Image ""
+           Size 52 28
+          }
+          OverlayWidgetClass "{5970F72F63F423F6}" {
+           Prefab "{5970F72F63F423F6}"
+           {
+            ImageWidgetClass "{5970F72F63F423F7}" {
+             Prefab "{5970F72F63F423F7}"
+             Color 1 1 1 0.196
+             Texture "{7AB16551B8DB2B22}UI/Textures/FieldManual/Common/Entries/background_ui.edds"
+             Image ""
+             Size 246 28
+            }
+            TextWidgetClass "{5970F72F63F47A5C}" {
+             Prefab "{5970F72F63F47A5C}"
+             "Font Size" 20
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    HorizontalLayoutWidgetClass "{5970F72F366B0072}" {
+     Name "Layout_Areas"
+     Slot FrameWidgetSlot "{5946E32EACCFE4A3}" {
+      Anchor 0.5 1 0.5 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 512
+      OffsetRight -512
+      SizeY 128
+      OffsetBottom -128
+      Alignment 0.5 0
+      SizeToContent 1
+     }
+    }
+   }
+  }
+ }
+}

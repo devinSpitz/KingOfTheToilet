@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{649739A222C86E51}UI/Layouts/HUD/CaptureAndHold/CaptureAndHoldScoringLayout.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

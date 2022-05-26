@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{91F649E5E37BFE1C}Scripts/Game/Coop/EliminateTask"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C9B9E06AB1D2A684}Configs/Map/MapFullscreen.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

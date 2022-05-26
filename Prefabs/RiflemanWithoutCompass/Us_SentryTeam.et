@@ -1,0 +1,7 @@
+SCR_AIGroup : "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" {
+ ID "0000000000000001"
+ coords 7410.305 162.781 4302.993
+ m_aUnitPrefabSlots {
+  "{5FDE0AD684C8B3CD}Prefabs/RiflemanWithoutCompass/US_RifleMan.et" "{5FDE0AD684C8B3CD}Prefabs/RiflemanWithoutCompass/US_RifleMan.et"
+ }
+}

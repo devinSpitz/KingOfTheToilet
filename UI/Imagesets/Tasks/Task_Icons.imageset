@@ -1,0 +1,83 @@
+ImageSetClass {
+ RefSize 204 268
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "UI/Imagesets/Tasks/Task_Icons._atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass Icon_Task_BG {
+   Name "Icon_Task_BG"
+   Pos 2 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Custom {
+   Name "Icon_Task_Custom"
+   Pos 68 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Evacuate {
+   Name "Icon_Task_Evacuate"
+   Pos 134 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Guard {
+   Name "Icon_Task_Guard"
+   Pos 2 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Hover {
+   Name "Icon_Task_Hover"
+   Pos 68 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Move {
+   Name "Icon_Task_Move"
+   Pos 134 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Outline {
+   Name "Icon_Task_Outline"
+   Pos 2 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Seize_Relay {
+   Name "Icon_Task_Seize_Relay"
+   Pos 68 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Refuel {
+   Name "Icon_Task_Refuel"
+   Pos 134 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Seize {
+   Name "Icon_Task_Seize"
+   Pos 2 200
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Transport {
+   Name "Icon_Task_Transport"
+   Pos 68 200
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass Icon_Task_Build {
+   Name "Icon_Task_Build"
+   Pos 134 200
+   Size 64 64
+   Flags 0
+  }
+ }
+}

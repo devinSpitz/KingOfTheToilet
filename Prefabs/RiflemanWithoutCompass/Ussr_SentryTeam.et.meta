@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3BBB6CDBB63CB745}Prefabs/RiflemanWithoutCompass/Ussr_SentryTeam.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

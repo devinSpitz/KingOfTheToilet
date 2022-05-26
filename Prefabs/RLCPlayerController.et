@@ -1,0 +1,18 @@
+SCR_PlayerController : "{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et" {
+ ID "1A9BA6BEFA06E3B1"
+ components {
+  SCR_HUDManagerComponent "{2FDC275D9EBCDB8B}" {
+   InfoDisplays {
+    RLC_RlcUi "{5970FA6AF1BB4162}" {
+     m_LayoutPath "{649739A222C86E51}Worlds/CaptureAndHoldScoringLayout.layout"
+     m_eLayer ALWAYS_TOP
+    }
+    RLCUiWaypoint "{5974D7DC41AEA9EA}" {
+     m_LayoutPath "{42D927E4F2FF6FE5}UI/layouts/HUD/Tutorial/TutorialWaypoint.layout"
+     m_eLayer BACKGROUND
+    }
+   }
+  }
+ }
+ coords 7504.22 165.761 4276.183
+}

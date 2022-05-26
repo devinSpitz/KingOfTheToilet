@@ -1,0 +1,221 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 12301
+   name "Signal 12"
+   tl 8.889 -203.333
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion_Interior.sig"
+   inputsport {
+    1 6 7
+   }
+   outputsport {
+    5
+   }
+   inputvalues {
+    1 0 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    1 1 1
+   }
+  }
+ }
+ filters {
+  FilterClass : "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_InteriorAttenuation.conf" {
+   id 13334
+   name "Filter 13"
+   tl 5.556 -72.222
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 12301
+         port 5
+        }
+       }
+      }
+     }
+    }
+   }
+   parent "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_InteriorAttenuation.conf"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 1033
+   name "SOUND_TOILET"
+   tl 2.222 29
+   conns {
+    ConnectionsClass connections {
+     id 14
+     links {
+      ConnectionClass connection {
+       id 3090
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 18
+       links {
+        ConnectionClass connection {
+         id 13334
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+   outState 9227
+   outStatePort 24583
+   "Disable updating" 1
+  }
+ }
+ mixers {
+  MixerClass {
+   id 9227
+   name "OutputState 9"
+   tl 282.333 -308.639
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   iops {
+    IOPConnectionClass iopConnection {
+     port 24583
+     conn {
+      ConnectionsClass connections {
+       id 5
+       links {
+        ConnectionClass connection {
+         id 1033
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "ANM_Footsteps" "ANM_Voice" "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_Ambients" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Objects" "UI" "VEH_Engine" "VEH_Tires" "VON" "SFX" "ENV_Ambient_NoAtt" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb"
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 3090
+   name "Flush Shader"
+   tl -221 33.222
+   conns {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 2052
+       port 65
+      }
+     }
+    }
+   }
+   iops {
+    IOPConnectionClass iopConnection {
+     port 0
+     conn {
+      ConnectionsClass connections {
+       id 24
+       links {
+        ConnectionClass connection {
+         id 4124
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 15
+       links {
+        ConnectionClass connection {
+         id 5139
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 17
+       links {
+        ConnectionClass connection {
+         id 8213
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_40m.conf" {
+   id 5139
+   tl -221 -110.889
+   parent "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedFolder/Amplitude_40m.conf"
+   curve Custom
+   AttenuationCurve {
+    CurvePoint "1" {
+     Y 1
+    }
+   }
+  }
+ }
+ frequency {
+  FrequencyClass {
+   id 8213
+   name "Frequency 8"
+   tl -221 -36.273
+   enableDistanceAtt 1
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 2052
+   name "Flushhhh"
+   tl -470.556 30.555
+   Volume -4
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "Sample(1)" {
+     Filename "{17BBFECF3337FBA5}Sounds/Props/Furniture/Toilet_01/Samples/Props_Toilet_01_Flush.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 4124
+   name "Spatiality 4"
+   tl -219.889 -184
+   spatialFactor 1
+  }
+ }
+ version 1
+ sourcesLimit 1
+}

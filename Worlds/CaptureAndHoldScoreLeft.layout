@@ -1,0 +1,80 @@
+FrameWidgetClass {
+ Name "TeamScore_Left"
+ {
+  HorizontalLayoutWidgetClass "{5970F72F60D3511E}" {
+   Name "HorizontalLayout"
+   Slot FrameWidgetSlot "{5946C48CD6F5AA1B}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+    SizeToContent 1
+   }
+   "Inherit Color" 1
+   {
+    OverlayWidgetClass "{5970F72F60D35110}" {
+     Name "ScoreBar_Overlay_Left"
+     Slot LayoutSlot "{5946C48CE4AAF96F}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 0
+     }
+     "Inherit Color" 1
+     {
+      ImageWidgetClass "{5970F72F60D35111}" {
+       Name "ScoreBar_Background_Left"
+       Slot OverlayWidgetSlot "{5946C48CF170BEDB}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 0 0 0 0
+       }
+       Color 1 1 1 0.196
+       Texture "{7AB16551B8DB2B22}UI/Textures/FieldManual/Common/Entries/background_ui.edds"
+       Image ""
+       Size 246 28
+       "Shadow Offset" 1 1
+       "Shadow Color" 0 0 0 0.502
+      }
+      TextWidgetClass "{5970F72F60D35113}" {
+       Name "ScoreBar_Text_Left"
+       Slot OverlayWidgetSlot "{5946C489C0251C04}" {
+        HorizontalAlign 2
+        VerticalAlign 1
+        Padding 0 0 8 0
+       }
+       Text "0"
+       "Font Size" 16
+       "Min Font Size" 16
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       FontProperties FontProperties "{5946C48E9B1B0FFF}" {
+        Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+        ShadowSize 4
+        ShadowOffset 5 5
+        ShadowOpacity 0.5
+       }
+       Offset -0.5 0
+      }
+     }
+    }
+    ImageWidgetClass "{5970F72F60D35114}" {
+     Name "Icon_Faction_Left"
+     Slot LayoutSlot "{5626D0F19F5A6DB1}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 4 0 0 0
+     }
+     Color 1 1 1 1
+     Image ""
+     Size 52 28
+     "Shadow Offset" 1 1
+     "Shadow Color" 0 0 0 0.502
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{78F34A21E46A6836}Sounds/Props/Furniture/Toilet_01/Props_Toilet_01.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}
